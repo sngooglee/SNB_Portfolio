@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: var(--primary);
+}
+:root{
+    --primary : #202020;
+    --yellow_s : #fFFD6C;
+    --secondary : #707070;
+    --primary_font : "Montserrat";
+  }
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif ;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+        color: black;
+        font-size: 1.4rem;
+        margin-top: 5px;
+        line-height: 2.5rem;
+        font-weight: 300px;
+        letter-spacing: .05rem;
+}
+.skill-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px ;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.cta{
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--yellow_s);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+    transition: .3s ease;
+    margin-bottom: 10px;
+    }
+
+.cta:hover{
+        color: var(--primary);
+        background-color: white;
+    }
+.brand h1{
+    font-size: 4.5rem;
+    font-family: 'Sacramento', cursive;
+    color: var(--yellow_s);
+}
+.brand h1:hover{
+    animation: rubberBand;
+      
+    animation-duration: 1s;
+}
+
+
+/*Header section*/
+#header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top:0;
+    width: 100vw;
+    height: auto;
+}
+#header .header{
+    min-height: 8vh;
+    background-color: rgba(31, 30, 30, 0.24);
+    transition: .3s ease background-color;
+}
+#header .logo{
+    display: flex;
+    height: 40px;
+    width: 45px;
+    margin-right: 1rem;
+    margin-bottom: 2.1rem;
+}
+#header .nav-bar{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+#header .nav-list ul{
+    list-style: none;
+    position: absolute;
+    background-color: rgb(31, 30, 30);
+    width: 100vw;
+    height: 100vh;
+    left: 100%;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .5s ease left;
+}
+#header .nav-list ul.active{
+    left: 0%;
+
+}
+#header .nav-list ul a{
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: white;
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+
+}
+#header .nav-list ul a.active,
+#header .nav-list ul a:hover {
+    background: none;
+    color: var(--yellow_s);
+}
+
+#header .hamburger{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(.8);
+    margin-right: 20px;
+
+}
+#header .hamburger:after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation: hamburger_puls 1s ease infinite;
+
+}
+#header .hamburger .bar{
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+    
+}
+#header .hamburger .bar::after,
+#header .hamburger .bar::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: 1.3s ease;
+    transition-property: top, bottom;
+
+}
+#header .hamburger .bar::after{
+    top: 8px;
+}
+#header .hamburger .bar::before{
+    bottom: 8px;
+}
+#header .hamburger.active .bar::before{
+    bottom:0;
+}
+#header .hamburger.active .bar::after{
+    top:0;
+}
+
+#title .heading{
+    color:var(--yellow_s);
+    width: auto;
+    font-size: 3rem;
+    text-align: center;
+    position:relative;
+    margin-top: 150px;
+}
+.heading h1{
+    font-family: "Montserrat" ,sans-serif;
+    text-transform: uppercase;
+    font-weight: 1;
+}
+/* .heading h1:hover{
+    cursor: pointer;
+    animation: rubberBand;
+    animation-duration: 1s;
+} */
+
+/* Ribbion Style */
+
+.ribbion {
+    position: relative;
+}
+
+.ribbion__wrapper {
+    /* Displayed at the top left corner */
+    left: 0px;
+    position: absolute;
+    top: -130px;
+
+    /* Size */
+    height: 100px;
+    width: 100px;
+
+    /* Hide the part of its children which is displayed outside */
+}
+
+.ribbion__ribbon {
+    /* Position */
+    left: -64px;
+    position: absolute;
+    top: 32px;
+
+    /* Size */
+    height: 24px;
+    width: 206px;
+
+    /* Displayed diagonally */
+    transform: rotate(-45deg);
+
+    /* Background color */
+    background-color: rgba(0, 0, 0, 0.3);
+
+    /* Centerize the text content */
+    text-align: center;
+}
+
+/* 
+project section---------------------------------- */
+
+.heading h2{
+    font-family: "Montserrat" ,sans-serif;
+    font-size: 2rem;
+    font-weight: 1;
+}
+.all_project{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin-top: 80px;
+}
+.proj_container{
+    width: auto;
+    border-radius: 25px;  
+    border: 4px solid var(--yellow_s);
+    margin-bottom: 20px;
+    display: flex;
+    box-shadow: 0 0 3rem var(--yellow_s);
+    justify-content: space-between;
+    transition: .3s ease;
+}
+.proj_container:hover{      
+    box-shadow: 0 0 2rem var(--yellow_s);
+    animation: headShake 1s ease ;
+    cursor: pointer;
+}
+.proj_img{
+    width: 148px;
+    height: 264px;
+    border-radius: 8px;
+    margin-left: 10px;
+    padding: 2px;
+    justify-content: space-between;
+}
+.all_project .title_meme{
+    font-family: "Montserrat",sans-serif;
+    color:whitesmoke;
+    font-size: 1.5rem;
+    margin-right:  10px;
+    border-radius: 20px;
+    margin-top: 2px;
+    margin-left: 15px;
+}
+p{
+    font-family: "Montserrat",sans-serif;
+    color: whitesmoke;
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+/* Desktop Responsive Desigine */
+
+@media only screen and (min-width:1200px){
+
+
+    .heading h1{
+        font-size: 5rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.5rem;
+        color: #a19f9f;
+    }
+    .all_project{
+        flex-direction: column;
+    }
+    .proj_container{
+        width: 700px;
+        margin-bottom: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+#footer{
+    
+    margin-top: 100vh;
+    background-color: var(--primary);
+
+    clip-path: ellipse(40%);
+}
+
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#footer h2{
+    color: white;
+    font-weight: 500;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer .social-icon{
+    display: flex;
+
+}
+
+#footer .social-item{
+    padding: 1.5rem;
+    margin :1rem;
+}
+
+#footer img{
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 18px 0 var(--yellow_s);
+    transition: .3s ease box-shadow;
+}
+
+#footer img:hover{
+    box-shadow: 0px 0px 5px 0 crimson;
+}
+
+
+
+
+
+
+
+
+
+/*keyframe*/
+@keyframes hamburger_puls{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+@keyframes text_reveal_box{
+50%{
+    width: 100%;
+    left: 0;
+}
+100%{
+    width: 0;
+    left: 100%
+}    
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: crimson;
+        font-weight: 500px;
+    }
+}
+/* End keyframe*/
+
+
+
+
+/*Media for tablet*/
+
+@media only screen and (min-width:768px){
+    
+    
+}
+
+
+/*Media quary for desktop*/
+@media only screen and (min-width:1200px){
+#skill .skill-top{
+    width: 600px;
+        max-width: 0 auto;}
+
+#header .hamburger{
+    display: none;
+}
+#header .nav-list ul{
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+}
+#header .nav-list ul li{
+    display: inline-block;
+}
+#header .nav-list ul li a{
+    font-size: 1.8rem;
+}
+#header .nav-list ul a:after{
+    display: none;
+}
+
+
+
+
+
+    
+}
