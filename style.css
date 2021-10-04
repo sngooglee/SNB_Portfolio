@@ -17,6 +17,8 @@ html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif ;
     scroll-behavior: smooth;
+    
+    
 }
 a{
     text-decoration: none;
@@ -323,6 +325,9 @@ p{
     font-size: 4rem;
     font-weight: 1;
     position: relative;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: "Sacramento", sans-serif ;
     color:transparent;
     animation: text_reveal .4s ease forwards;
@@ -657,7 +662,7 @@ p{
 }
 .code_head h1{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 .coding_page{
     height: auto;
@@ -674,6 +679,83 @@ p{
 }
 .codechef{
     width: 40%;
+}
+/* Experiance*/
+
+.exp_heading h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.experiance{
+    flex-direction: column;
+    margin-top: 100px;
+}
+.segments{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+ .skill-bottom{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+ .skill-item{
+    
+    flex-basis: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./media/programming.jpg);
+    background-size: 400px;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0px 0px 18px 0 black;
+    transition: .3s ease box-shadow;
+}
+
+.skill-item:hover{
+    box-shadow: 0px 0px 5px 0 black;
+}
+.skill-item.skill-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .9;
+    z-index: -1;
+}
+.skill-bottom .icon{
+    
+    width: 80px;
+    margin-bottom: 20px;
+}
+.skill-item h2{
+    font-size: 1.777rem;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.skill-item p{
+    color: white;
+    text-align: left;
+
 }
 
 
@@ -700,7 +782,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--yellow_s);
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     clip-path: ellipse(49% 31% at 50% 57%);
     font-family: "Montserrat", sans-serif;
 }
@@ -711,8 +793,13 @@ p{
 .quots h1{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
+    color: white;
+}
+.quot p{
+    color: white;
 }
 .quot{
+    color:white;;
     margin-top: 50px;
     width: 300px;
     height: 100px;
@@ -731,7 +818,9 @@ p{
 
 #footer{
     background-color: var(--primary);
-    clip-path: ellipse(40%);
+    
+    clip-path: polygon(94% 8%, 77% 6%, 49% 6%, 25% 9%, 0% 17%, 0% 66%, 0% 100%, 29% 100%, 52% 100%, 73% 100%, 100% 100%, 100% 74%, 100% 48%, 100% 10%);
+
 }
 
 #footer .footer{
@@ -1053,6 +1142,16 @@ p{
 .codechef{
     width: 20%;
     margin-right: 20px;
+}
+
+
+
+.skill-bottom{
+    flex-direction: row;
+}
+.skill-item{
+    flex-basis: 50%;
+    height: 300px;
 }
 
 
