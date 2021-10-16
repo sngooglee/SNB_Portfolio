@@ -24,7 +24,7 @@ a{
     text-decoration: none;
 }
 .container{
-    min-height: 100vh;
+    min-height: 120vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -368,7 +368,7 @@ p{
 }
 .skill-right{
     width: 350px;
-    height: 100px;
+    height: 150px;
     margin-bottom: 220px;
     margin-top: 30px;
     font-family: "Indie Flower",sans-serif;
@@ -844,8 +844,8 @@ p{
 }
 
 #footer .social-item{
-    padding: 1.5rem;
-    margin :1rem;
+    padding: 1rem;
+    margin :0.5rem;
 }
 
 #footer img{
