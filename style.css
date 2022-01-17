@@ -51,7 +51,7 @@ p{
         letter-spacing: .05rem;
 }
 .skill-title{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
     color: black;
     margin-bottom: 10px ;
@@ -374,7 +374,7 @@ p{
     font-family: "Indie Flower",sans-serif;
 }
 .skill-right p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .skill-left {
    width: 270px;
