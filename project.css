@@ -4,7 +4,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    background-color: var(--primary);
+    
 }
 :root{
     --primary : #202020;
@@ -13,6 +13,7 @@
     --primary_font : "Montserrat";
   }
 html{
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     font-size: 10px;
     font-family: 'Montserrat', sans-serif ;
     scroll-behavior: smooth;
@@ -327,12 +328,6 @@ p{
 
 /*Footer*/
 
-#footer{
-    background-color: var(--primary);
-    
-    clip-path: polygon(94% 8%, 77% 6%, 49% 6%, 25% 9%, 0% 17%, 0% 66%, 0% 100%, 29% 100%, 52% 100%, 73% 100%, 100% 100%, 100% 74%, 100% 48%, 100% 10%);
-
-}
 
 #footer .footer{
     min-height: 200px;
