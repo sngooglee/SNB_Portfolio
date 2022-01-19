@@ -7,7 +7,8 @@
     box-sizing: border-box;
 }
 :root{
-    --primary : #202020;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
     --yellow_s : #fFFD6C;
     --secondary : #707070;
     --primary_font : "Montserrat";
