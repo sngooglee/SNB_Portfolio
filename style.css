@@ -11,6 +11,7 @@
     --yellow_s : #fFFD6C;
     --secondary : #707070;
     --primary_font : "Montserrat";
+    --pri_grad : radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     
   }
 html{
@@ -124,7 +125,7 @@ p{
 #header .nav-list ul{
     list-style: none;
     position: absolute;
-    
+    background-color: #1b2735;
     width: 100vw;
     height: 100vh;
     left: 100%;
@@ -139,6 +140,7 @@ p{
 }
 #header .nav-list ul.active{
     left: 0%;
+
 
 }
 .nav-list li{
