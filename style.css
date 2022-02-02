@@ -6,6 +6,10 @@
     margin: 0%;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'walt-disney';
+    src: url(./file/New\ Walt\ Disney.ttf);
+}
 :root{
     --primary : #202020;
     --yellow_s : #fFFD6C;
@@ -83,8 +87,9 @@ p{
     }
 .brand h1{
     font-size: 4.5rem;
-    font-family: 'Sacramento', cursive;
+    font-family: 'walt-disney', cursive;
     color: var(--yellow_s);
+    font-weight: 50;
 }
 .brand h1:hover{
     animation: rubberBand;
@@ -332,7 +337,7 @@ p{
     background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: "Sacramento", sans-serif ;
+    font-family: "walt-disney", sans-serif ;
     color:transparent;
     animation: text_reveal .4s ease forwards;
     animation-delay: 3s;
