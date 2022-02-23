@@ -12,7 +12,7 @@
 }
 :root{
     --primary : #202020;
-    --yellow_s : #fFFD6C;
+    --yellow_s : #ffff00;
     --secondary : #707070;
     --primary_font : "Montserrat";
     --pri_grad : radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -270,7 +270,7 @@ p{
     
 }
 #hero .hero .right{
-    width: 70%;
+    width: 10%;
     margin-top: 20px;
     margin-bottom: 50px;
     
@@ -1038,7 +1038,7 @@ p{
 }
 #hero .hero .right{
     margin-top: 110px;
-    width: 28%;
+    width: 35%;
     
     
 }
